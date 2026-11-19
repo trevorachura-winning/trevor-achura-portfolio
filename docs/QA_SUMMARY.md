@@ -6,9 +6,8 @@ _Environment: cloud build session, 19 Nov 2026. No package registry access, so t
 
 | Check | Result | Evidence / notes |
 |---|---|---|
-| `npm run build` (next build) | **Blocked** | Next.js not installable in session. Run locally. |
-| `npm run lint` (ESLint, eslint-config-next) | **Blocked** | Same reason. |
-| `npm run typecheck` (full, with @types/react) | **Blocked** | Same reason. |
+| `next build` (includes TypeScript check) | **Passed** | Vercel preview build for commit a659548 — state READY. |
+| `npm run lint` (ESLint, eslint-config-next) | **Not Tested** | Not part of `next build` in Next 16. Run locally. |
 | Type-check of project code against React/Next stubs | **Passed** | `tsc --strict --noUncheckedIndexedAccess`, 0 errors. Confirms content satisfies the `Portfolio` contract. |
 | Render + hydration (React 19) | **Passed** | No hydration or runtime errors in console. |
 | Responsive layout 320 / 375 / 414 / 768 / 1024 / 1440 px | **Passed** | Zero horizontal overflow at all six widths; screenshots reviewed. |
