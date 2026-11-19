@@ -107,10 +107,31 @@ export type Credential = {
   kind: "Degree" | "Diploma" | "Certification" | "Course";
 };
 
-export type InsightTheme = {
+/** A point of view the person is prepared to stand behind publicly. */
+export type PointOfView = {
+  id: string;
+  theme: string;
+  /** The thesis, one sentence, stated as a conviction. */
+  statement: string;
+  /** Two or three sentences of reasoning. Opinion, not unsourced statistics. */
+  argument: string;
+};
+
+/** Topics offered for talks/briefings. Never imply an engagement took place. */
+export type BriefingTopic = {
   id: string;
   title: string;
-  question: string;
+  /** Lower-case phrase that follows "For", e.g. "boards and leadership teams". */
+  audience: string;
+};
+
+/** Published writing. Only list items that are actually live. */
+export type Article = {
+  id: string;
+  title: string;
+  publishedOn: string;
+  url: VerifiedLink;
+  outlet?: string;
 };
 
 export type ContactMethod = {
@@ -164,7 +185,15 @@ export type Portfolio = {
   experience: readonly ExperienceRecord[];
   engagements: readonly Engagement[];
   credentials: readonly Credential[];
-  insights: { intro: string; themes: readonly InsightTheme[] };
+  perspectives: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    pointsOfView: readonly PointOfView[];
+    briefings: { title: string; intro: string; topics: readonly BriefingTopic[] };
+    /** Rendered only when at least one verified, live article exists. */
+    articles: readonly Article[];
+  };
   contact: {
     title: string;
     body: string;

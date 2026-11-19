@@ -25,7 +25,7 @@ src/
   app/                 layout, page, SEO (metadata, OG image, robots, sitemap, icon)
   components/
     layout/            SiteHeader (sticky + mobile menu), SiteFooter
-    sections/          Hero, About, Expertise (+ skills), Experience, Learning, Insights, Contact
+    sections/          Hero, Perspectives, About, Expertise (+ skills), Experience, Learning, Contact
     ui/                Reveal (scroll motion), SectionHeading, OrgMark, Icon, CopyButton
   content/portfolio.ts ALL personal content — the only file that changes per person
   lib/types.ts         the Portfolio content contract (incl. phase-two CaseStudy model)
@@ -34,6 +34,10 @@ src/
 public/logos/          approved organisation logos go here (see docs/OPEN_FACTS.md)
 docs/                  build status, open facts, references, QA summary
 ```
+
+## Positioning
+
+The site positions Trevor as a practitioner thought leader: the first section after the hero is **Perspectives** — six points of view, a set of talk/briefing topics and (once published) his articles. Expertise and experience follow as the evidence behind those views.
 
 ## Editing content
 
@@ -50,7 +54,7 @@ All text, roles, dates, outcomes and contact details live in `src/content/portfo
 To create `firstname.flameconnect.tech`:
 
 1. Copy this repository to a new repo (`firstname-portfolio`).
-2. Replace `src/content/portfolio.ts` with the member's approved content.
+2. Replace `src/content/portfolio.ts` with the member's approved content — starting with their **Perspectives** (points of view, briefing topics, published articles). Every network site leads with what its owner thinks, so together the team reads as a group of practitioner thought leaders.
 3. Replace the `@theme` tokens in `src/app/globals.css` with the member's own identity.
 4. Create a separate Vercel project and add the subdomain.
 

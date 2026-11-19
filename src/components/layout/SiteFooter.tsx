@@ -7,7 +7,7 @@ export function SiteFooter({ name }: { name: string }) {
           © {year} {name}. All rights reserved.
         </p>
         <p>
-          Part of the{" "}
+          One of the practitioners sharing perspectives on practical AI at{" "}
           <a
             href="https://flameconnect.tech"
             target="_blank"
@@ -15,8 +15,8 @@ export function SiteFooter({ name }: { name: string }) {
             className="font-medium text-white/80 underline-offset-4 hover:text-white hover:underline"
           >
             Flame Connect
-          </a>{" "}
-          team portfolio network.
+          </a>
+          .
         </p>
       </div>
     </footer>

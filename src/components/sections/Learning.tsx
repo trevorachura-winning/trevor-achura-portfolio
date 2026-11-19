@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function Learning({ credentials }: { credentials: readonly Credential[] }) {
   return (
-    <section id="learning" aria-labelledby="learning-title" className="scroll-mt-20 bg-ice/45 py-20 sm:py-28">
+    <section id="learning" aria-labelledby="learning-title" className="scroll-mt-20 py-20 sm:py-28">
       <div className="container-page grid gap-12 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-5">
           <SectionHeading

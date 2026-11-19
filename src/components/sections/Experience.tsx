@@ -11,7 +11,7 @@ type ExperienceProps = {
 
 export function Experience({ records, engagements }: ExperienceProps) {
   return (
-    <section id="experience" aria-labelledby="experience-title" className="scroll-mt-20 py-20 sm:py-28">
+    <section id="experience" aria-labelledby="experience-title" className="scroll-mt-20 bg-ice/45 py-20 sm:py-28">
       <div className="container-page">
         <SectionHeading
           id="experience"

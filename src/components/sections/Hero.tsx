@@ -40,8 +40,8 @@ export function Hero({ profile }: { profile: Profile }) {
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="#expertise" className="btn-primary">
-              Explore my expertise
+            <a href="#perspectives" className="btn-primary">
+              Read my perspectives
               <Icon name="arrowDown" width={18} height={18} />
             </a>
             <a href="#contact" className="btn-secondary">
@@ -82,7 +82,7 @@ export function Hero({ profile }: { profile: Profile }) {
 
       <div className="container-page mt-14 hidden lg:block">
         <a
-          href="#about"
+          href="#perspectives"
           className="group inline-flex items-center gap-3 text-[0.78rem] font-semibold tracking-[0.14em] text-slate uppercase"
         >
           <span aria-hidden="true" className="relative h-10 w-px overflow-hidden bg-line">

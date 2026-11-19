@@ -15,7 +15,7 @@ export function Expertise({ areas, skills }: ExpertiseProps) {
     <section
       id="expertise"
       aria-labelledby="expertise-title"
-      className="scroll-mt-20 bg-ice/45 py-20 sm:py-28"
+      className="scroll-mt-20 py-20 sm:py-28"
     >
       <div className="container-page">
         <SectionHeading

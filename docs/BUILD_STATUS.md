@@ -1,6 +1,6 @@
 # Build status — Trevor Achura Portfolio
 
-_Last updated: 19 November 2026 · v1.0 (initial build)_
+_Last updated: 19 November 2026 · v1.1 (thought-leadership positioning, call line removed)_
 
 | Layer | Status | Notes |
 |---|---|---|
@@ -14,7 +14,7 @@ _Last updated: 19 November 2026 · v1.0 (initial build)_
 
 ## Sections delivered
 
-Hero · About · Expertise (6 disciplines + tools) · Professional Experience (6 records + 3 engagements) · Education & Learning · Insights (themes only) · Contact · Footer · SEO/OG/robots/sitemap/JSON-LD · mobile navigation · reduced-motion support.
+Hero · Perspectives (6 points of view + briefing topics; articles list ready) · About · Expertise (6 disciplines + tools) · Professional Experience (6 records + 3 engagements) · Education & Learning · Contact · Footer · SEO/OG/robots/sitemap/JSON-LD · mobile navigation · reduced-motion support.
 
 **Intentionally not built:** projects/case studies (phase two), CMS, database, contact form, dark theme (not needed for v1).
 

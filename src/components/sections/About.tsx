@@ -3,7 +3,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function About({ about }: { about: Portfolio["about"] }) {
   return (
-    <section id="about" aria-labelledby="about-title" className="scroll-mt-20 py-20 sm:py-28">
+    <section id="about" aria-labelledby="about-title" className="scroll-mt-20 bg-ice/45 py-20 sm:py-28">
       <div className="container-page grid gap-12 lg:grid-cols-12 lg:gap-10">
         <Reveal className="lg:col-span-5">
           <p className="eyebrow">{about.eyebrow}</p>

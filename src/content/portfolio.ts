@@ -12,11 +12,12 @@ export const portfolio = {
     url: "https://trevor.flameconnect.tech",
     title: "Trevor Achura — Enterprise AI & Automation Consultant",
     description:
-      "Trevor Achura is a Kampala-based Enterprise AI & Automation Consultant and full-stack engineer who helps organisations turn business challenges into practical, intelligent digital solutions.",
+      "Trevor Achura is a Kampala-based Enterprise AI & Automation Consultant and full-stack engineer sharing practical perspectives on AI, automation and digital transformation for African organisations.",
     locale: "en_UG",
     keywords: [
       "Trevor Achura",
       "AI in business",
+      "AI in Africa",
       "business automation",
       "full-stack engineer",
       "digital transformation",
@@ -32,7 +33,7 @@ export const portfolio = {
       "Enterprise AI & Automation Consultant | Full-Stack Engineer | Business Technology Practitioner",
     heroStatement: "Turning business challenges into intelligent digital solutions.",
     supportingCopy:
-      "I work at the intersection of artificial intelligence, software engineering, automation and strategic digital communications — helping organisations translate business challenges into practical technology solutions.",
+      "I work at the intersection of artificial intelligence, software engineering, automation and strategic digital communications — helping leaders see where technology creates real value, then building it with them.",
     positioning: [
       "AI in Business",
       "Software Engineering",
@@ -44,11 +45,11 @@ export const portfolio = {
   },
 
   navigation: [
+    { label: "Perspectives", href: "#perspectives" },
     { label: "About", href: "#about" },
     { label: "Expertise", href: "#expertise" },
     { label: "Experience", href: "#experience" },
     { label: "Learning", href: "#learning" },
-    { label: "Insights", href: "#insights" },
     { label: "Contact", href: "#contact" },
   ],
 
@@ -391,41 +392,87 @@ export const portfolio = {
     },
   ],
 
-  insights: {
+  perspectives: {
+    eyebrow: "Perspectives",
+    title: "Practical AI starts with how work actually gets done.",
     intro:
-      "Ideas I'm working through in practice. Articles will be published here as they are ready.",
-    themes: [
+      "Points of view I hold from building and adopting technology inside real organisations. I'll keep sharpening them here — and in conversation with the leaders and teams I work with.",
+    pointsOfView: [
       {
-        id: "ai-african-business",
-        title: "AI in African business",
-        question: "Where does AI create real value for organisations operating in African markets today?",
+        id: "workflows-before-models",
+        theme: "AI in African business",
+        statement: "AI value in African businesses starts with workflows, not models.",
+        argument:
+          "Most organisations don't need a custom model to benefit from AI. They need their everyday processes documented, digitised and measurable. Once the workflow is clear, AI has something real to improve.",
       },
       {
-        id: "intelligent-workflows",
-        title: "Intelligent workflows",
-        question: "How do we redesign everyday work so people and software each do what they do best?",
+        id: "automate-handoffs",
+        theme: "Intelligent workflows",
+        statement: "Automate the handoffs before you automate the decisions.",
+        argument:
+          "The biggest delays live between people and systems — approvals, re-typing, chasing updates. Remove that friction first, and better decision support follows naturally.",
       },
       {
-        id: "software-enabled-operations",
-        title: "Software-enabled operations",
-        question: "What changes when recruitment, learning and reporting run on purpose-built systems?",
+        id: "adoption-not-installation",
+        theme: "Digital transformation",
+        statement: "Adoption, not installation, decides the return on technology.",
+        argument:
+          "A system nobody uses is a cost. Training, communication and early wins deserve the same care as the build itself.",
       },
       {
-        id: "digital-transformation",
-        title: "Digital transformation",
-        question: "Why adoption, not installation, decides whether a technology investment pays off.",
+        id: "purpose-built-operations",
+        theme: "Software-enabled operations",
+        statement: "Once work repeats every week, it deserves a purpose-built tool.",
+        argument:
+          "Recruitment, learning and reporting outgrow spreadsheets quickly. A simple, role-based system brings clarity, accountability and data leaders can act on.",
       },
       {
-        id: "technology-and-growth",
-        title: "Technology and organisational growth",
-        question: "How growing organisations can use technology to scale without losing what makes them work.",
+        id: "responsible-ai-discipline",
+        theme: "Responsible AI",
+        statement: "Responsible AI is a business discipline, not a disclaimer.",
+        argument:
+          "Clear data rules, human review and honest limits are what earn the trust that adoption depends on.",
+      },
+      {
+        id: "small-teams-scale",
+        theme: "Technology and growth",
+        statement: "Well-designed systems let small teams operate with the reliability of large ones.",
+        argument:
+          "Growing organisations can scale their service without scaling chaos — if the systems underneath are designed for it from the start.",
       },
     ],
+    briefings: {
+      title: "Talks & leadership briefings",
+      intro: "Topics I can bring to leadership teams, workshops and events.",
+      topics: [
+        {
+          id: "ai-for-african-executives",
+          title: "AI for African executives: separating opportunity from hype",
+          audience: "boards and leadership teams",
+        },
+        {
+          id: "designing-intelligent-workflows",
+          title: "Designing intelligent workflows",
+          audience: "operations and department heads",
+        },
+        {
+          id: "human-centred-workplace-technology",
+          title: "Human-centred workplace technology",
+          audience: "HR, learning and people teams",
+        },
+        {
+          id: "making-transformation-stick",
+          title: "Making digital transformation stick",
+          audience: "transformation and project leads",
+        },
+      ],
+    },
+    articles: [],
   },
 
   contact: {
     title: "Let's talk about the challenge you're solving.",
-    body: "Whether it's an AI opportunity, a workflow worth automating or a platform to build, I'm happy to start with a conversation.",
+    body: "Invite me to brief your leadership team, explore an AI opportunity, or think through a workflow worth automating. Every engagement starts with a conversation.",
     methods: [
       {
         id: "email",
@@ -442,14 +489,6 @@ export const portfolio = {
         href: "https://wa.me/256781201089",
         public: true,
         hint: "Quick questions",
-      },
-      {
-        id: "phone",
-        label: "Call",
-        value: "+256 764 018 701",
-        href: "tel:+256764018701",
-        public: true,
-        hint: "Direct line",
       },
     ],
     socials: [
