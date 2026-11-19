@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+/*
+ * Trevor Achura personal design system — tokens.
+ * Source: Trevor Achura Brand & Campaign Design System v2.0.
+ * Future team portfolios replace this block with their own identity.
+ */
+@theme {
+  --color-navy: #071533;
+  --color-navy-800: #0c1d44;
+  --color-blue: #1451d2;
+  --color-blue-deep: #0d43b8;
+  --color-ice: #eaf3ff;
+  --color-ink: #0b1220;
+  --color-slate: #56647f;
+  --color-line: #dce4f0;
+  --color-white: #ffffff;
+
+  --font-sans: var(--font-inter), "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+  --font-display: "Inter Display", var(--font-inter), "Inter", ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", sans-serif;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    font-optical-sizing: auto;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-blue);
+    color: var(--color-white);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-blue);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-[1240px] px-5 sm:px-8 lg:px-10;
+}
+
+@utility eyebrow {
+  @apply text-[0.75rem] font-semibold tracking-[0.14em] text-blue uppercase;
+}
+
+@utility btn {
+  @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 text-[0.95rem] font-semibold transition-[background-color,color,border-color,transform] duration-150 ease-out active:scale-[0.98];
+}
+
+@utility btn-primary {
+  @apply btn bg-blue text-white shadow-[0_8px_24px_-12px_rgb(20_81_210/0.7)] hover:bg-blue-deep;
+}
+
+@utility btn-secondary {
+  @apply btn border border-line bg-white text-navy hover:border-navy/30 hover:bg-ice/60;
+}
+
+@utility card {
+  @apply rounded-[24px] border border-line bg-white;
+}
+
+/* Scroll-reveal: content is visible by default; JS opts elements into motion. */
+[data-reveal="pending"] {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+[data-reveal="shown"] {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 600ms var(--ease-out-soft),
+    transform 600ms var(--ease-out-soft);
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+.scroll-cue-line {
+  animation: scroll-cue 2.2s var(--ease-out-soft) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
